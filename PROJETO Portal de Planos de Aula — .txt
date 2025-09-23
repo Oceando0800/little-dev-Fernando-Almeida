@@ -1,0 +1,94 @@
+PROJETO: Portal de Planos de Aula — Upload & Compartilhamento
+Resumo: repositório para site/app de upload e consulta rápida de planos de curso e materiais didáticos. Foco em acesso ágil por área (eletromecânica, TI, etc.), metadata consistente e interface limpa tipo AVA.
+
+PRINCIPAIS OBJETIVOS
+
+Disponibilizar plano de curso / plano de aula de cada área de forma rápida e pesquisável.
+
+Permitir upload de materiais (PDF, livros, exercícios, relatórios) com metadados completos.
+
+Pesquisa e filtros que encontrem o conteúdo em 2–3 cliques.
+
+Visual limpo e objetivo, com títulos grandes, textos simples e elementos gráficos chamativos.
+
+Dark mode nativo.
+
+REQUISITOS FUNCIONAIS (essenciais)
+
+Cada item (plano ou material) deve ter:
+
+Título (campo obrigatório)
+
+Tipo (ex: Plano de Curso, Plano de Aula, Material, Relatório de Livro)
+
+Área / Departamento (ex: Eletromecânica, TI, Administração)
+
+Unidade curricular / Disciplina
+
+Turma / Módulo
+
+Data (data de criação / validade)
+
+Nome do professor / autor
+
+Descrição curta (máx 1–2 frases)
+
+Materiais anexados (PDF, e-book, slides — listar arquivos)
+
+Links importantes (ex: links para AIs de suporte, repositórios, plataformas)
+
+Relatórios de livros (campo específico ou tag)
+
+Imagem de capa (opcional — ver regra de imagens abaixo)
+
+Tags / palavras-chave
+
+Filtros de busca (UI)
+
+Filtrar por: Área, Professor, Disciplina, Turma / Módulo, Data (intervalo), Tipo de curso (Técnico, Aperfeiçoamento, Qualificação), Tipo de material.
+
+Ordenação: mais recentes, mais baixados, recomendados.
+
+UI / UX (diretrizes visuais)
+
+Seguir modelo AVA: navegação simples (menu lateral + cards de conteúdo).
+
+Títulos grandes e chamativos; textos curtos e objetivos; uso de ícones para cada tipo.
+
+Cards de resultados com:
+
+Título grande (1 linha)
+
+Meta (Área • Disciplina • Turma • Professor • Data)
+
+Botões rápidos: Visualizar / Baixar / Favoritar / Compartilhar link
+
+Páginas de upload com preview do arquivo e formulário de metadados obrigatório antes do envio.
+
+Dark mode: alternância clara no header; todos os componentes testados em contraste alto.
+
+Responsivo (mobile first).
+
+Imagens
+
+Imagens relacionadas exclusivamente ao tema (sem imagens genéricas não relacionadas).
+
+Máximo 2 imagens por área (ou por coleção/etiqueta), para evitar poluição visual e peso no site.
+
+Preferir imagens simples, ícones e ilustrações vetoriais. Tamanho recomendado: largura ≤ 1200px; compressão adequada.
+
+Regras de conteúdo e qualidade
+
+Título e metadados preenchidos obrigatoriamente — uploads sem metadados não são publicados.
+
+Nomes de arquivo: AREA_DISCIPLINA_TURMA_TIPO_AUTOR_DATA.ext (ex: TI_Programacao_1A_PlanoAula_JSilva_2025-09-01.pdf)
+
+Permitido: PDF, PPT(X), DOC(X), EPUB, imagens (jpg/png) — extensões bloqueadas: executáveis (.exe, .bat), scripts potencialmente perigosos.
+
+Limite de tamanho por upload por padrão: 50 MB (ajustável).
+
+Integração com AIs e links de suporte
+
+Campo específico para links de AIs (ex: ferramentas de geração de plano, sumário automático, correção de texto).
+
+Recomendar (lista pública) ferramentas de suporte e boas práticas de uso.
